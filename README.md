@@ -4,10 +4,9 @@
 SCGGCN is a deep learning model designed to predict candidate genes related to mental disorders using the concept of spiritual connectomics. The model utilizes graph convolutional networks (GCNs) to capture the complex relationships between genes and effectively identify potential biomarkers for mental illnesses.
 
 ## Features
-- Integrates Protein-protein network data to identify relevant gene-gene interactions.
+- Integrates Protein-protein interaction network data to identify relevant gene-gene interactions.
 - Utilizes graph convolutional networks (GCNs) for effective feature extraction.
 - Predicts candidate genes associated with mental disorders.
-- Provides a user-friendly interface to input gene expression data for prediction.
 
 ## Installation
 1. Clone the repository:
