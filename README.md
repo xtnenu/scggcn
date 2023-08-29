@@ -21,15 +21,7 @@ pip install -r requirements.txt
 ## Usage
 Ongoing
 
-4. View the predicted candidate genes in the output directory.
-
 ## Contributing
 We welcome contributions from the community to improve SCGGCN. If you find any bugs or have ideas for enhancements, please submit a pull request or open an issue on the GitHub repository.
-
-## License
-This project is licensed under the MIT License. Please see the [LICENSE](LICENSE) file for more details.
-
-## Contact
-If you have any questions or suggestions, feel free to reach out to us at scggcn@example.com.
 
 **Note:** This project is for research purposes only and should not be used as a substitute for professional medical advice or diagnosis.
