@@ -15,7 +15,7 @@ git clone https://github.com/xtnenu/scggcn.git
 ```
 2. Install the dependencies:
 ```bash
-pip install -r requirements.txt
+conda install --file packages.txt
 ```
 
 ## Usage
