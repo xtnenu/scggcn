@@ -47,7 +47,7 @@ class Gat_bayes(torch.nn.Module):
         pos_loss = -torch.log(torch.sigmoid((z[self.data.edge_index[0]] * z[self.data.edge_index[1]]).sum(dim=1)) + 1e-15).mean()
         pb, _ = remove_self_loops(self.data.edge_index)
         pb, _ = add_self_loops(pb)
-        neg_edge_index = negative_sampling(pb, 13627, 504378)
+        neg_edge_index = negative_sampling(pb, 13627, 334502)
         neg_loss = -torch.log(
             1 - torch.sigmoid((z[neg_edge_index[0]] * z[neg_edge_index[1]]).sum(dim=1)) + 1e-15).mean()
         r_loss = pos_loss + neg_loss
@@ -81,7 +81,7 @@ class ChebNet(torch.nn.Module):
         pos_loss = -torch.log(torch.sigmoid((z[self.data.edge_index[0]] * z[self.data.edge_index[1]]).sum(dim=1)) + 1e-15).mean()
         pb, _ = remove_self_loops(self.data.edge_index)
         pb, _ = add_self_loops(pb)
-        neg_edge_index = negative_sampling(pb, 13627, 504378)
+        neg_edge_index = negative_sampling(pb, 13627, 334502)
         neg_loss = -torch.log(
             1 - torch.sigmoid((z[neg_edge_index[0]] * z[neg_edge_index[1]]).sum(dim=1)) + 1e-15).mean()
         r_loss = pos_loss + neg_loss
@@ -132,7 +132,7 @@ class Gcn_bayes(torch.nn.Module):
         pos_loss = -torch.log(torch.sigmoid((z[self.data.edge_index[0]] * z[self.data.edge_index[1]]).sum(dim=1)) + 1e-15).mean()
         pb, _ = remove_self_loops(self.data.edge_index)
         pb, _ = add_self_loops(pb)
-        neg_edge_index = negative_sampling(pb, 13627, 504378)
+        neg_edge_index = negative_sampling(pb, 13627, 334502)
         neg_loss = -torch.log(
             1 - torch.sigmoid((z[neg_edge_index[0]] * z[neg_edge_index[1]]).sum(dim=1)) + 1e-15).mean()
         r_loss = pos_loss + neg_loss
